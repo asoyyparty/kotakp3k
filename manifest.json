@@ -1,6 +1,6 @@
 {
   "name": "Monitoring Kotak P3K",
-  "short_name": "P3K CBA",
+  "short_name": "Kotak P3K",
   "description": "Digital Monitoring System for First Aid Kits at PT CBA Chemical Industry",
   "start_url": "index.php",
   "display": "standalone",
