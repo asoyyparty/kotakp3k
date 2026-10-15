@@ -1,9 +1,13 @@
-const CACHE_NAME = 'p3k-monitoring-v1';
+const CACHE_NAME = 'p3k-monitoring-v3';
 const ASSETS_TO_CACHE = [
     'index.php',
+    'manifest.json',
     'assets/css/style.css',
+    'assets/images/p3k-logo.png',
     'assets/images/icon-512.png',
-    'assets/images/cba-text.png',
+    'assets/images/icon-192.png',
+    'assets/images/apple-touch-icon.png',
+    'assets/images/favicon-32x32.png',
     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css',
     'https://unpkg.com/lucide@latest',
     'https://cdn.jsdelivr.net/npm/sweetalert2@11'

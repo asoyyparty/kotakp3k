@@ -48,8 +48,20 @@ if (isset($_POST['login'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - MONITORING KOTAK P3K</title>
-    <link rel="shortcut icon" href="assets/images/cba-text.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/icon-512.png">
+    
+    <!-- PWA & Apple Touch Icons for Add to Home Screen -->
     <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="assets/images/apple-touch-icon-precomposed.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Kotak P3K">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#2563eb">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -110,7 +122,7 @@ if (isset($_POST['login'])) {
 <body>
     <div class="login-card glass-card">
         <div class="text-center mb-4">
-            <img src="assets/images/cba-text.png" alt="Logo CBA" class="mb-3" style="height: 60px; width: auto;">
+            <img src="assets/images/p3k-logo.png" alt="Logo Monitoring Kotak P3K" class="mb-3" style="height: 75px; width: auto; border-radius: 16px; box-shadow: 0 10px 25px rgba(30, 64, 175, 0.2);">
             <h3 class="mb-1">Monitoring Kotak P3K</h3>
             <p class="text-secondary small">Digital Monitoring System</p>
         </div>

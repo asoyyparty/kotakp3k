@@ -26,10 +26,33 @@ if (isset($_POST['login'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - MONITORING KOTAK P3K</title>
-    <link rel="shortcut icon" href="assets/images/cba-text.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/icon-512.png">
+    
+    <!-- PWA & Apple Touch Icons for Add to Home Screen -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="assets/images/apple-touch-icon-precomposed.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Kotak P3K">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2563eb">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.log('Service Worker registration failed', err));
+            });
+        }
+    </script>
     <style>
         body {
             background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
